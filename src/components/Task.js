@@ -7,7 +7,7 @@ export default function Task({ taskId, taskContent, setTaskList }) {
         setFinished((finished) => !finished)
         setTaskList((curTaskList) => curTaskList.map((curTask) => curTask.id === taskId ? { ...curTask, finished: !finished } : curTask))
     }
-    console.log(finished)
+
     return (
         <>
             {taskId && (

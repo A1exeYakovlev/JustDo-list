@@ -1,7 +1,6 @@
 import Filter from "./Filter";
 import Info from "./Info";
-export default function Top({ setFilterBy }) {
-
+export default function Top({ setFilterBy, taskList }) {
 
     return (
         <div className="app__top">
@@ -10,7 +9,7 @@ export default function Top({ setFilterBy }) {
                 <Filter filterType="finished" setFilterBy={setFilterBy}>Finished</Filter>
                 <Filter filterType="all" setFilterBy={setFilterBy}>All</Filter>
             </ul>
-            <Info />
+            <Info taskList={taskList} />
         </div>
 
     )

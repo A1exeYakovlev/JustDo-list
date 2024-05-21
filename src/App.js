@@ -19,7 +19,7 @@ export default function App() {
         Just<span>Do</span> List
       </h1>
       <div className="app__wrap">
-        <Top setFilterBy={setFilterBy} />
+        <Top setFilterBy={setFilterBy} taskList={taskList} />
         <TaskInput newTask={newTask} onNewTask={setNewTask} setTaskList={setTaskList} />
         <TaskList filteredTaskList={filteredTaskList} setTaskList={setTaskList} />
       </div>
