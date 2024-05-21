@@ -3,7 +3,7 @@ export default function Info(taskList) {
     const finishedCount = taskList.taskList.filter((task) => task.finished).length;
 
     return (
-        <div className="top__info">
+        <div className="top__info top-fz">
             <div>Total: {taskCount}</div>
             <div>Finished: {finishedCount}</div>
         </div>

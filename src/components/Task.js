@@ -13,7 +13,7 @@ export default function Task({ taskId, taskContent, setTaskList }) {
             {taskId && (
                 <li className="tasklist__row">
                     <input type="checkbox" className="app__task-checkbox" checked={finished} value="finished" onChange={handleCheckbox}></input>
-                    <div className="app__task-content">{taskContent}</div>
+                    <div className="app__task-content task-fz">{taskContent}</div>
                 </li>)
             }
         </>

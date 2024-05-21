@@ -58,6 +58,10 @@ body {
   align-items: center;
 }
 
+.top-fz {
+  font-size: 2.4rem;
+}
+
 .top__info {
   display: flex;
   gap: 2rem;
@@ -92,4 +96,8 @@ body {
 .tasklist__row {
   display: flex;
   gap: 1rem;
+}
+
+.task-fz {
+  font-size: 2rem;
 }

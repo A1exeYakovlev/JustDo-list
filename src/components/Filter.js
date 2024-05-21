@@ -6,7 +6,7 @@ export default function Filter({ children, setFilterBy, filterType }) {
 
     return (
         <li className="filter__btn">
-            <button onClick={handleFilter}>{children}</button>
+            <button className="top-fz" onClick={handleFilter}>{children}</button>
         </li>
     )
 }
