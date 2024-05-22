@@ -8,6 +8,7 @@
   --dark-text: #030e19;
   --light-text: #e9f4ff;
   --accent-color: #ffbf00;
+  --light-accent: #ffd966;
 }
 
 html {
@@ -82,6 +83,18 @@ body {
 
   &:not(:last-child) {
     margin-right: 1rem;
+  }
+
+  &.selected button {
+    background-color: var(--light-accent);
+    border-color: var(--light-accent);
+  }
+
+  button {
+    border-radius: 1.6rem;
+    border-width: 0.15rem;
+    width: 12rem;
+    background-color: transparent;
   }
 }
 

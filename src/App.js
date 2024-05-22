@@ -10,7 +10,7 @@ export default function App() {
 
   let filteredTaskList;
   if (filterBy === "active") filteredTaskList = taskList.filter(task => !task.finished);
-  if (filterBy === "finished") filteredTaskList = taskList.map(task => task.finished);
+  if (filterBy === "finished") filteredTaskList = taskList.filter(task => task.finished);
   if (filterBy === "all") filteredTaskList = taskList;
 
   return (
@@ -19,7 +19,7 @@ export default function App() {
         Just<span>Do</span> List
       </h1>
       <div className="app__wrap">
-        <Top setFilterBy={setFilterBy} taskList={taskList} />
+        <Top filterBy={filterBy} setFilterBy={setFilterBy} taskList={taskList} />
         <TaskInput newTask={newTask} onNewTask={setNewTask} setTaskList={setTaskList} />
         <TaskList filteredTaskList={filteredTaskList} setTaskList={setTaskList} />
       </div>
