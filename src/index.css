@@ -11,12 +11,28 @@
   --light-accent: #ffd966;
 }
 
+/* resolution breakpoints
+840px 52.5em
+640px 40em
+384px 24em */
+
 html {
   font-size: 62.5%;
+
+  /* 640px */
+  @media (max-width: 40em) {
+    font-size: 56.25%;
+  }
+
+  /* 384px */
+  @media (max-width: 24em) {
+    font-size: 50%;
+  }
 }
 
 body {
   margin: 0;
+  min-width: 40rem;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
     "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
@@ -32,6 +48,16 @@ body {
 
 .app {
   padding: 3rem 6rem;
+
+  /* 840px */
+  @media (max-width: 52.5em) {
+    padding: 2rem 1rem;
+  }
+
+  /* 640px */
+  @media (max-width: 40em) {
+    padding: 2rem 0.1rem;
+  }
 }
 
 .app__wrap {
@@ -57,6 +83,12 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  /* 840px */
+  @media (max-width: 52.5em) {
+    flex-direction: column;
+    gap: 2rem;
+  }
 }
 
 .top-fz {
@@ -83,6 +115,16 @@ body {
 
   &:not(:last-child) {
     margin-right: 1rem;
+
+    /* 840px */
+    @media (max-width: 52.5em) {
+      margin-right: 4rem;
+    }
+
+    /* 640px */
+    @media (max-width: 40em) {
+      margin-right: 1rem;
+    }
   }
 
   &.selected button {
@@ -95,6 +137,16 @@ body {
     border-width: 0.15rem;
     width: 12rem;
     background-color: transparent;
+
+    /* 840px */
+    @media (max-width: 52.5em) {
+      height: 4rem;
+    }
+
+    /* 640px */
+    @media (max-width: 40em) {
+      height: 6rem;
+    }
   }
 }
 
