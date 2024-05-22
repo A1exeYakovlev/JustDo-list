@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/A1exeYakovlev/JustDo-list/static/css/main.7a20e527.css",
+    "main.js": "/A1exeYakovlev/JustDo-list/static/js/main.0d04fac8.js",
+    "index.html": "/A1exeYakovlev/JustDo-list/index.html",
+    "main.7a20e527.css.map": "/A1exeYakovlev/JustDo-list/static/css/main.7a20e527.css.map",
+    "main.0d04fac8.js.map": "/A1exeYakovlev/JustDo-list/static/js/main.0d04fac8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a20e527.css",
+    "static/js/main.0d04fac8.js"
+  ]
+}
