@@ -14,9 +14,9 @@ export default function TaskInput({ newTask, onNewTask, setTaskList }) {
 
     return (
         <form className="app__task-input-form" onSubmit={handleSubmit}>
-            <label htmlFor="newTask"></label>
+            <label className="visuallyhidden" htmlFor="newTask">create a new task</label>
             <input
-                className="task-fz"
+                className="app__task-input task-fz"
                 id="newTask"
                 type="text"
                 value={newTask}

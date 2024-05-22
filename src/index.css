@@ -99,18 +99,40 @@ body {
 }
 
 .app__task-input-form {
-  margin-top: 2rem;
+  margin-top: 4rem;
+}
+
+.app__task-input {
+  width: 85%;
+  margin: 0 auto;
+  display: block;
+  border: none;
+  outline: none;
+  border-bottom: 0.1rem var(--dark-text) solid;
 }
 
 .app__tasklist {
   margin-top: 2rem;
+  padding: 0 7%;
 }
 
 .tasklist__row {
   display: flex;
+  align-items: baseline;
   gap: 1rem;
 }
 
 .task-fz {
   font-size: 2rem;
+}
+
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }
