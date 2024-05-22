@@ -9,8 +9,8 @@ export default function App() {
   const [filterBy, setFilterBy] = useState("all");
 
   let filteredTaskList;
-  if (filterBy === "active") filteredTaskList = taskList.map(task => task.finished ? {} : task);
-  if (filterBy === "finished") filteredTaskList = taskList.map(task => task.finished ? task : {});
+  if (filterBy === "active") filteredTaskList = taskList.filter(task => !task.finished);
+  if (filterBy === "finished") filteredTaskList = taskList.map(task => task.finished);
   if (filterBy === "all") filteredTaskList = taskList;
 
   return (
