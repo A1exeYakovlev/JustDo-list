@@ -5,7 +5,7 @@ export default function TaskList({ filteredTaskList, setTaskList }) {
 
     return (
         <ul className="app__tasklist">{
-            filteredTaskList.map((task, i) => <Task taskContent={task.task} taskId={task.id} setTaskList={setTaskList} key={task.id || i} />
+            filteredTaskList.map((task, i) => <Task task={task} setTaskList={setTaskList} key={task.id || i} />
             )
         }</ul>
     )
