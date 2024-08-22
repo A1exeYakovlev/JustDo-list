@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-export default function Task({ task, taskContent, setTaskList }) {
+export default function Task({ task, setTaskList }) {
     const [finished, setFinished] = useState(task.finished);
 
     function handleCheckbox() {

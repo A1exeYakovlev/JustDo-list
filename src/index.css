@@ -9,6 +9,7 @@
   --light-text: #e9f4ff;
   --accent-color: #ffbf00;
   --light-accent: #ffd966;
+  --lighter-accent: #fdedbc;
 }
 
 /* resolution breakpoints
@@ -127,16 +128,17 @@ body {
     }
   }
 
-  &.selected button {
-    background-color: var(--light-accent);
-    border-color: var(--light-accent);
-  }
-
-  button {
+  a:link,
+  a:visited {
+    display: inline-block;
     border-radius: 1.6rem;
-    border-width: 0.15rem;
     width: 12rem;
     background-color: transparent;
+    cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    color: var(--dark-text);
+    transition: all 0.3s;
 
     /* 840px */
     @media (max-width: 52.5em) {
@@ -147,6 +149,19 @@ body {
     @media (max-width: 40em) {
       height: 6rem;
     }
+  }
+
+  a:hover,
+  a:active {
+    background-color: var(--lighter-accent);
+  }
+
+  a:link.active,
+  a:visited.active,
+  a:hover.active,
+  a:active.active {
+    background-color: var(--light-accent);
+    border-color: var(--light-accent);
   }
 }
 

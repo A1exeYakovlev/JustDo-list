@@ -1,15 +1,14 @@
-export default function TaskInput({ newTask, onNewTask, setTaskList }) {
+export default function TaskInput({ newTask, setNewTask, setTaskList }) {
 
     function handleNewTask(e) {
-        onNewTask(e.target.value)
-
+        setNewTask(e.target.value)
     }
 
     function handleSubmit(e) {
         e.preventDefault();
         const currentTime = Date.now();
         setTaskList((cur) => [...cur, { id: currentTime, task: newTask, finished: false, created: currentTime }]);
-        onNewTask("");
+        setNewTask("");
     }
 
     return (
@@ -23,6 +22,6 @@ export default function TaskInput({ newTask, onNewTask, setTaskList }) {
                 placeholder="create a new task"
                 onChange={handleNewTask}
             />
-        </form >
+        </form>
     )
 }

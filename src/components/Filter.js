@@ -1,14 +1,9 @@
-export default function Filter({ children, filterBy, setFilterBy, filterType }) {
-    const selected = filterBy === filterType;
+import { NavLink } from "react-router-dom";
 
-    function handleFilter() {
-        if (filterBy === filterType) return
-        setFilterBy(filterType)
-    }
-
+export default function Filter({ children, filterType }) {
     return (
-        <li className={`filter__btn ${selected ? "selected" : ""}`}>
-            <button className="top-fz" onClick={handleFilter}>{children}</button>
+        <li className="filter__btn">
+            <NavLink to={`/${filterType}`} className="top-fz">{children}</NavLink>
         </li>
     )
 }
