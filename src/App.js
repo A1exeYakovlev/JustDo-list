@@ -13,7 +13,7 @@ export default function App() {
       <h1 className="heading">
         Just<span>Do</span> List
       </h1>
-      <BrowserRouter>
+      <BrowserRouter basename="/JustDo-list">
         <div className="app__wrap">
           <Top taskList={taskList} />
           <TaskInput newTask={newTask} setNewTask={setNewTask} setTaskList={setTaskList} />
