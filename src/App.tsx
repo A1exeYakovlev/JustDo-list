@@ -16,7 +16,7 @@ export default function App() {
       </h1>
       <HashRouter>
         <div className="app__wrap">
-          <Top taskList={taskList} />
+          <Top taskList={taskList} setTaskList={setTaskList} />
           <TaskInput
             newTask={newTask}
             setNewTask={setNewTask}
